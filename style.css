@@ -11,15 +11,41 @@ body {
 }
 
 header {
-    background-color: #ff0000;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+    background-color: #ffcc00;
+    padding: 15px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.menu {
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    height: 80px;
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: purple;
+    font-size: 18px;
+}
+
+.menu-links a:hover {
+    color: red;
+}
+
+/* Menu Cards */
+.container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -50,7 +76,7 @@ header {
     border-radius: 10px;
 }
 
-.card h2 {
+.card h3 {
     font-size: 22px;
     margin: 12px 0;
     color: #222;
@@ -62,7 +88,7 @@ header {
     margin-bottom: 10px;
 }
 
-.harga {
+.price {
     display: block;
     font-size: 20px;
     font-weight: bold;
@@ -70,7 +96,7 @@ header {
     margin: 10px 0;
 }
 
-button {
+.btn {
     background-color: #ff6600;
     color: white;
     padding: 12px 18px;
@@ -81,6 +107,6 @@ button {
     transition: background 0.3s ease;
 }
 
-button:hover {
+.btn:hover {
     background-color: #cc5500;
 }
