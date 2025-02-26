@@ -11,8 +11,11 @@ body {
 }
 
 header {
-    background-color: #ffcc00;
-    padding: 15px 20px;
+    background-color: #ff0000;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -24,27 +27,17 @@ header {
     margin: auto;
 }
 
-.logo {
-    height: 80px;
+.top-nav img {
+    height: 50px;
 }
 
-.menu-links {
-    display: flex;
-    gap: 20px;
-}
-
-.menu-links a {
+.top-nav a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    color: purple;
     font-size: 18px;
+    margin-left: 20px;
 }
 
-.menu-links a:hover {
-    color: red;
-}
-
-/* Menu Cards */
 .container {
     display: flex;
     justify-content: center;
@@ -54,13 +47,15 @@ header {
 }
 
 .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: white;
-    width: 280px;
+    width: 500px;
     margin: 15px;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -70,15 +65,21 @@ header {
 }
 
 .card img {
-    width: 100%;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 10px;
+    margin-right: 15px;
+}
+
+.card-content {
+    text-align: left;
+    flex: 1;
 }
 
 .card h3 {
     font-size: 22px;
-    margin: 12px 0;
+    margin-bottom: 8px;
     color: #222;
 }
 
@@ -90,20 +91,24 @@ header {
 
 .price {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #e74c3c;
     margin: 10px 0;
 }
 
+.buttons {
+    margin-top: 10px;
+}
+
 .btn {
     background-color: #ff6600;
     color: white;
-    padding: 12px 18px;
+    padding: 10px 14px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     transition: background 0.3s ease;
 }
 
