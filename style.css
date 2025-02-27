@@ -116,8 +116,8 @@ header {
     background-color: #cc5500;
 }
 
-div {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url("bg.jpg");
-
+div#content {
+    background-image: url(bg.jpg);
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
 }
