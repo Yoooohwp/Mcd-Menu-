@@ -117,7 +117,7 @@ header {
 }
 
 div#content {
-    background-image: url(bg.jpg);
+    background-image: url("bg.jpg");
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
 }
